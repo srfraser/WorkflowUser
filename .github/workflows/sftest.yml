@@ -1,8 +1,8 @@
-name: gofmt
+name: srftest
 on: [push, pull_request]
 jobs:
   gofmt:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted, taskgraph 
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
