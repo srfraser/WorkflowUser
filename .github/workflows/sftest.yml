@@ -9,4 +9,4 @@ jobs:
       with:
         fetch-depth: 2
     - name: Run an experiment
-      uses: srfraser/WorkflowTest
+      uses: srfraser/WorkflowTest@v1
