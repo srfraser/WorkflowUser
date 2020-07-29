@@ -1,0 +1,12 @@
+name: gofmt
+on: [push, pull_request]
+jobs:
+  gofmt:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 2
+    - name: Run an experiment
+      uses: srfraser/WorkflowTest
