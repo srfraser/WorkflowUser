@@ -2,7 +2,7 @@ name: srftest
 on: [push, pull_request]
 jobs:
   gofmt:
-    runs-on: self-hosted, taskgraph 
+    runs-on: self-hosted, taskgraph, macOS, X64
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
